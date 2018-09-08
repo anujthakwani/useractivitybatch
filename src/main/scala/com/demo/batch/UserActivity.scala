@@ -9,15 +9,12 @@ import org.apache.spark.sql.{Column, SaveMode, SparkSession}
 import org.apache.log4j.Logger
 
 
-import scala.io.Source
-
 object UserActivity {
-  //val url = getClass.getResource("/props")
-  //val source = Source.fromURL(url)
+
   var properties = new Properties()
 
   var prop = null
-  //properties.load(source.bufferedReader())
+
 
 
   def main(args: Array[String]) {

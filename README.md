@@ -15,4 +15,4 @@ mvn clean install
 
 ## Run
 ```
-/usr/lib/spark/bin/spark-submit --class 'com.demo.batch.UserActivity' --name 'UserSessionsBatch' --max-executors 5 --executor-memory 2G --driver-memory 3G --executor-cores 4 user-activity-batch-1.0-SNAPSHOT-jar-with-dependencies.jar props
+/usr/lib/spark/bin/spark-submit --class 'com.demo.batch.UserActivity' --name 'UserSessionsBatch' --max-executors 5 --executor-memory 2G --driver-memory 3G --executor-cores 4 user-activity-batch-1.0-SNAPSHOT-jar-with-dependencies.jar <path-to-props-file>
