@@ -6,7 +6,7 @@ This is  a spark batch processor to calculate sessions of a user based on it act
 
 DDL's are available in DDL folder.
 
-Main class is com.demo.batch.UserActivity/. 
+Main class is com.demo.batch.UserActivity. 
 
 ## Compile
 ```
