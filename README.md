@@ -1,18 +1,18 @@
-# Funnel Metrics Process 
+# User sessions calculator
 
 ## Description
 
-This is a realtime streaming application based on Spark & Kafka to calculate user analysis metrics 
+This is  a spark batch processor to calculate sessions of a user based on it activity
 
-dataSinks DDL's are available in resources/MysqlDDL.sql file
+DDL's are available in DDL folder.
+
+Main class is com.demo.batch.UserActivity/. 
 
 ## Compile
 ```
-mvn clean package
+mvn clean install
 ```
 
 ## Run
 ```
-/usr/lib/spark/bin/spark-submit --class 'com.demo.streaming.FunnelMetrics' --name 'ExecutiveSummary'  --max-executors 5 --executor-memory 2G --driver-memory 3G --executor-cores 4 /home/athakwani/demo/target/times-net-1.0-SNAPSHOT-jar-with-dependencies.jar  <path-to-props-file>
-  
-
+/usr/lib/spark/bin/spark-submit --class 'com.demo.batch.UserActivity' --name 'UserSessionsBatch' --max-executors 5 --executor-memory 2G --driver-memory 3G --executor-cores 4 user-activity-batch-1.0-SNAPSHOT-jar-with-dependencies.jar props

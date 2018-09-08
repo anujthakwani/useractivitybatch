@@ -1,0 +1,3 @@
+jobName=UserActivity
+sourcePath=<s3-path>
+tgtTable=user_sessions
