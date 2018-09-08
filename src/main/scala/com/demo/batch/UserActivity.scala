@@ -29,7 +29,7 @@ object UserActivity {
     val tgtTable=properties.getProperty("tgtTable")
 
     val spark = SparkSession.builder
-      .appName(properties.getProperty("jobName"))
+      .appName(properties.getProperty("jobName")).enableHiveSupport()
       .getOrCreate
 
 
